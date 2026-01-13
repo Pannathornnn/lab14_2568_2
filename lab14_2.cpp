@@ -48,6 +48,13 @@ void showMatrix(const bool B[N][N])
 
 void findLocalMax(const double A[N][N], bool B[N][N])
 {
+	for(int i = 0; i < N; i++)
+    {
+		for(int j = 0; j < N; j++)
+		{
+			B[i][j] = false;
+		}
+	}
 	for(int current_row = 1 ; current_row < N-1 ; current_row++)
 	{
 		for(int current_col = 1 ; current_col < N-1 ; current_col++)
